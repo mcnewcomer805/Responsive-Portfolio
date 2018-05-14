@@ -1,0 +1,196 @@
+
+
+
+
+.h1 {
+    background-color:rgb(13, 188, 201);
+    height: 100px;
+    width: 400px;
+    color: #eee;
+    text-align: center;
+    padding-top: 55px;
+    margin-top: 15px;
+    float: left;
+}
+
+.nav {
+    float: right;
+    text-align: right
+    padding-top: 55px;
+    margin-top: 85px;
+}
+
+.about {
+    padding: 40px;
+    color:grey;
+    padding-top: 55px;
+    margin-top: 85px;
+}
+
+.aboutMe {
+    text-align: left;
+    padding: 30px;
+    color:rgb(13, 188, 201);
+    border-style: solid;
+    border-color: grey;
+    border-width: 0px 0px 2px 0px;
+}
+
+.contact {
+    text-align: left;
+    padding: 30px;
+    color:rgb(13, 188, 201);
+    border-style: solid;
+    border-color: grey;
+    border-width: 0px 0px 2px 0px;
+}
+
+.generalContent {
+    height: 960px;
+}
+
+.specialArticle {
+    border-style: sold;
+    border-width: 2px;
+    width:100%px;
+}
+
+.specialArticleTwo {
+    border-style: sold;
+    border-width: 2px;
+    width:100%px;
+}
+
+.specialImages {
+    border-style: sold;
+    border-width: 2px;
+    width: 60%;
+}
+
+.articleAboutMe {
+    float: right;
+    width: 70%
+}
+
+.imageMe {
+    float: left;
+}
+
+footer.copyright {
+    background-color:darkgray;
+    color:#eee;
+    padding: 15px 5px 0px 5px;
+    text-align: bottom;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.imageOne {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin: 15px;
+    filter: blur(0px);
+}
+
+.imageTwo {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin: 15px;
+    filter: blur(15px);
+}
+
+.imageThree {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin: 15px;
+    filter: grayscale(100%);
+}
+
+.imageFour {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin: 15px;
+    filter: contrast(250%);
+}
+
+.imageFive {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin: 15px;
+    filter: invert(100%);
+}
+
+.textImage {
+    position: relative;
+    text-align: center;
+    color: #eee;
+    align: center;
+}
+
+.normal {
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    bottom: -410px;
+    left: 15px;
+    color: white;
+    background-color: blue;
+    padding: 14px 93px 14px 126px;
+}
+
+.blurry {
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    bottom: -410px;
+    left: 350px;
+    color: white;
+    background-color: blue;
+    padding: 14px 93px 14px 126px;;
+}
+
+.grayscale {
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    bottom: -895px;
+    left: 15px;
+    color: white;
+    background-color: blue;
+    padding: 14px 93px 14px 103px;
+}
+
+.contrast {
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    bottom: -895px;
+    left: 344px;
+    color: white;
+    background-color: blue;
+    padding: 14px 93px 14px 114px;
+}
+
+.invert {
+    position: absolute;
+    align-content: center;
+    text-align: center;
+    bottom: -895px;
+    left: 344px;
+    color: white;
+    background-color: blue;
+    padding: 14px 93px 14px 114px;
+}
+
+.messege {
+    height:200px;
+    width:200px;
+}
+
