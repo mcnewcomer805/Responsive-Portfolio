@@ -1,6 +1,9 @@
 
 
-
+body {
+    background-image: url("assets/img/hexabump.png");
+    background-repeat: repeat;
+}
 
 .h1 {
     background-color:rgb(13, 188, 201);

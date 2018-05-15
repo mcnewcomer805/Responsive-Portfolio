@@ -1,9 +1,16 @@
+.bodyA {
+        background-image: url(assets/images/leather_1_@2X.png);
+        background-repeat: repeat;
+        width: 960px;
+}
 
-
-
+.content {
+    max-width: 960px;
+    margin: auto;
+}
 
 .h1 {
-    background-color:rgb(13, 188, 201);
+    background-color:#4aaaa5;
     height: 100px;
     width: 400px;
     color: #eee;
@@ -11,6 +18,12 @@
     padding-top: 55px;
     margin-top: 15px;
     float: left;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.pAbout {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .nav {
@@ -18,6 +31,7 @@
     text-align: right;
     padding-top: 55px;
     margin-top: 85px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, 'sans-serif';
 }
 
 .about {
@@ -34,6 +48,7 @@
     border-style: solid;
     border-color: grey;
     border-width: 0px 0px 2px 0px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, 'sans-serif';
 }
 
 .contact {
@@ -43,6 +58,7 @@
     border-style: solid;
     border-color: grey;
     border-width: 0px 0px 2px 0px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, 'sans-serif';
 }
 
 .generalContent {
@@ -50,21 +66,21 @@
 }
 
 .specialArticle {
-    border-style: sold;
-    border-width: 2px;
-    width:100%px;
+    border-style: solid;
+    border-width: 0px;
+    width:100%;
 }
 
 .specialArticleTwo {
     border-style: sold;
-    border-width: 2px;
+    border-width: 0px;
     width:100%px;
 }
 
 .specialImages {
     border-style: sold;
-    border-width: 2px;
-    width: 60%;
+    border-width: 0px;
+    width: 80%;
 }
 
 .articleAboutMe {
@@ -72,6 +88,7 @@
     width: 70%;
     flex-wrap: wrap;
     padding: 2px;
+    color: #777777
 }
 
 .imageMe {
@@ -82,7 +99,7 @@
 }
 
 footer.copyright {
-    background-color:darkgray;
+    background-color:#666666;
     color:#eee;
     padding: 15px 5px 0px 5px;
     text-align: bottom;
@@ -90,6 +107,7 @@ footer.copyright {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, 'sans-serif';
 }
 
 .imageOne {
@@ -210,7 +228,7 @@ footer.copyright {
 
 @media only screen and (max-width: 768px) {
     .h1 {
-        background-color:rgb(13, 188, 201);
+        background-color: #4aaaa5;
         height: 80px;
         width: 220px;
         color: #eee;
@@ -223,7 +241,7 @@ footer.copyright {
 
 @media only screen and (max-width: 640px) {
     .h1 {
-        background-color:rgb(13, 188, 201);
+        background-color: #4aaaa5;
         height: 80px;
         width: 100%;
         color: #eee;
@@ -236,13 +254,13 @@ footer.copyright {
 }
 @media only screen and (max-width: 640px) {
     .nav {
-    display: inline-flex;
+        display: inline-flex;
         margin:0 auto;
-        width:100%;
-        font-size: 12px;
+        width:640px;
+        font-size: 10px;
         display: inline-block;
-        padding: 0px;
-       clear: both;
+        padding: 1px;
+        clear: both;
 
     } 
 }
