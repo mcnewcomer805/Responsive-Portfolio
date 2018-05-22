@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CrystalGame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body background="assets/images/background-image.jpg" alt="sky-image">
+
+    <h1>Number to Guess: <span id="number-to-guess"></span></h1>
+
+    <div id="crystals">
+     
+        <!-- <img class="crystal-image" src="assets/images/crystal-image.jpg" alt="amethyst"> -->
+    
+    </div>
+    <div>
+        <br><br><br>
+        <!-- <button type="button">RESET</button> -->
+        <button type="button" onclick="window.location.reload();">RESET</button>
+ 
+</div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+
+    var targetNumber = Math.floor((Math.random() * 10) + 19);
+
+    // function myFunction() {
+    // var x = Math.floor((Math.random() * 10) + 1);
+    // document.getElementById("demo").innerHTML = x;
+
+    $("#number-to-guess").text(targetNumber);
+
+    var crystals = $("#crystals");
+
+    var counter = 0;
+
+    var numberOptions = [10, 5 , 3 , 7];
+    // var increment = numberOptions[Math.round(Math.random())];
+
+        var agateCrystal = $("<img>");
+        var basiliskCrystal = $("<img>");
+        var amethystCrystal = $("<img>");
+        var boraxCrystal = $("<img>");
+        var numberOptionsOne = Math.floor((Math.random() * 12) + 1);
+        var numberOptionsTwo = Math.floor((Math.random() * 9) + 1);
+        var numberOptionsThree = Math.floor((Math.random() * 6) + 1);
+        var numberOptionsFour = Math.floor((Math.random() * 3) + 1);
+
+
+        agateCrystal.addClass("agate-image , pokemon:hover ");
+        basiliskCrystal.addClass("basilisk-image");
+        amethystCrystal.addClass("amethyst-image");
+        boraxCrystal.addClass("borax-image");
+
+        agateCrystal.attr("src", "assets/images/agate-image.jpg");
+        basiliskCrystal.attr("src", "assets/images/basilisk-image.jpg");
+        amethystCrystal.attr("src", "assets/images/crystal-image.jpg");
+        boraxCrystal.attr("src", "assets/images/borax-image.jpg");
+
+        agateCrystal.attr("data-crystalvalue", numberOptionsOne);
+        basiliskCrystal.attr("data-crystalvalue", numberOptionsTwo);
+        amethystCrystal.attr("data-crystalvalue", numberOptionsThree);
+        boraxCrystal.attr("data-crystalvalue", numberOptionsFour);
+
+        crystals.append(agateCrystal);
+        crystals.append(basiliskCrystal);
+        crystals.append(amethystCrystal);
+        crystals.append(boraxCrystal);
+
+
+
+   for (var i = 0; i < numberOptions.length; i++){
+
+$(".agate-image").attr("data-crystalvalue", numberOptionsOne);
+
+console.log(numberOptionsOne);
+}
+
+   for (var i = 0; i < numberOptions.length; i++){
+
+$(".basilisk-image").attr("data-crystalvalue", numberOptionsTwo);
+
+console.log(numberOptionsTwo);
+}
+
+   for (var i = 0; i < numberOptions.length; i++){
+
+$(".amethyst-image").attr("data-crystalvalue", numberOptionsThree);
+
+console.log(numberOptionsThree);
+}
+
+   for (var i = 0; i < numberOptions.length; i++){
+
+$(".borax-image").attr("data-crystalvalue", numberOptionsFour);
+
+console.log(numberOptionsFour);
+}
+ // }
+
+    
+    $(".agate-image, .basilisk-image, .amethyst-image, .borax-image").on("click", function() {
+
+        var crystalValue = ($(this).attr("data-crystalvalue"));
+        crystalValue = parseInt(crystalValue);
+
+        counter += crystalValue;
+
+        alert("Your new score is: " + counter);
+
+        if (counter === targetNumber) {
+
+            alert("You win!")
+
+        }
+
+        else if (counter >= targetNumber) {
+
+            alert("You lose!");
+        }
+    });
+
+    </script>
+</body>
+</html>
